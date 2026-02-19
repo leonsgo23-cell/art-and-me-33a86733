@@ -118,7 +118,7 @@ export default function App() {
         <div className="absolute top-20 left-10 w-64 h-64 bg-vibrant/10 rounded-full blur-3xl -z-10 animate-pulse"></div>
         <div className="absolute top-0 right-0 -z-10 w-full lg:w-1/2 h-full">
           <img 
-             src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1200&q=80" 
+             src="/images/celebration.jpg" 
              alt="Атмосфера творчества" 
              className="h-full w-full lg:rounded-bl-[250px] object-cover" 
            />
