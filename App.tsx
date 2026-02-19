@@ -118,7 +118,7 @@ export default function App() {
         <div className="absolute top-20 left-10 w-64 h-64 bg-vibrant/10 rounded-full blur-3xl -z-10 animate-pulse"></div>
         <div className="absolute top-0 right-0 -z-10 w-full lg:w-1/2 h-full">
           <img 
-             src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1200&q=80" 
+             src="/images/celebration.jpg" 
              alt="Атмосфера творчества" 
              className="h-full w-full lg:rounded-bl-[250px] object-cover" 
            />
@@ -178,7 +178,7 @@ export default function App() {
             </div>
             <div className="relative">
                 <div className="bg-slate-50 rounded-[3rem] shadow-2xl rotate-2 overflow-hidden aspect-[4/5]">
-                  <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=800&q=80" alt="Процесс рисования" className="w-full h-full object-cover" />
+                  <img src="/images/group1.jpg" alt="Процесс рисования" className="w-full h-full object-cover" />
                 </div>
                 <div className="absolute -bottom-10 -left-10 bg-white p-6 rounded-3xl shadow-xl flex items-center gap-4 z-20 border border-slate-100">
                    <div className="bg-sunny/20 p-3 rounded-full text-sunny"><Heart fill="currentColor" /></div>
@@ -203,7 +203,7 @@ export default function App() {
                 </div>
                 <div className="lg:w-1/2 w-full">
                     <div className="rounded-[2rem] shadow-2xl transform lg:scale-110 lg:rotate-3 overflow-hidden aspect-square bg-slate-50">
-                      <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=800&q=80" alt="Эстетика живописи" className="w-full h-full object-cover" />
+                      <img src="/images/group2.jpg" alt="Эстетика живописи" className="w-full h-full object-cover" />
                     </div>
                 </div>
             </div>
@@ -236,7 +236,7 @@ export default function App() {
             </div>
             <div className="order-1 lg:order-2">
                 <div className="rounded-[4rem] shadow-2xl h-[500px] overflow-hidden bg-slate-50">
-                  <img src="https://images.unsplash.com/photo-1554188248-986adbb73be4?auto=format&fit=crop&w=800&q=80" alt="Наша студия" className="w-full h-full object-cover" />
+                  <img src="/images/group3.jpg" alt="Наша студия" className="w-full h-full object-cover" />
                 </div>
             </div>
           </div>
@@ -252,14 +252,14 @@ export default function App() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { src: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=600&q=80", title: "Золотой закат" },
-              { src: "https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?auto=format&fit=crop&w=600&q=80", title: "Зимняя сказка" },
-              { src: "https://images.unsplash.com/photo-1549289524-06cf8837ace5?auto=format&fit=crop&w=600&q=80", title: "Грация" },
-              { src: "https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=600&q=80", title: "Цветочный этюд" },
-              { src: "https://images.unsplash.com/photo-1552084117-56a987666449?auto=format&fit=crop&w=600&q=80", title: "Портрет вдохновения" },
-              { src: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=600&q=80", title: "Абстракция" },
-              { src: "https://images.unsplash.com/photo-1520209759809-a9bcb6cb3241?auto=format&fit=crop&w=600&q=80", title: "Горный пейзаж" },
-              { src: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=600&q=80", title: "Морской бриз" }
+              { src: "/images/painting-sunset.png", title: "Золотой закат" },
+              { src: "/images/painting-winter.png", title: "Зимняя сказка" },
+              { src: "/images/painting-ballet.png", title: "Грация" },
+              { src: "/images/painting-bicycle.png", title: "Цветочный этюд" },
+              { src: "/images/portrait.jpg", title: "Портрет вдохновения" },
+              { src: "/images/group1.jpg", title: "Атмосфера студии" },
+              { src: "/images/group2.jpg", title: "Наши ученики" },
+              { src: "/images/group4.jpg", title: "Праздник красок" }
             ].map((item, i) => (
               <div key={i} className="group relative rounded-3xl overflow-hidden shadow-lg aspect-[4/5] bg-white border border-slate-100">
                 <img src={item.src} alt={item.title} className="w-full h-full object-cover transition-transform group-hover:scale-105 duration-700" />
@@ -372,7 +372,7 @@ export default function App() {
       {/* 11. FINAL CTA */}
       <section className="py-48 bg-midnight relative overflow-hidden text-center">
         <div className="absolute inset-0 opacity-40">
-           <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=1600&q=80" alt="Фон успеха" className="w-full h-full object-cover" />
+           <img src="/images/group4.jpg" alt="Фон успеха" className="w-full h-full object-cover" />
         </div>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <h2 className="text-6xl md:text-9xl font-black text-white mb-16 leading-none tracking-tighter">
