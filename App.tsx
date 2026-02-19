@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Palette, Star, Play, CheckCircle, Package, ChevronDown, Sparkles, Menu, X, Brush, ShieldCheck, Wine, Sparkle, Heart } from 'lucide-react';
 import { GoogleGenAI } from "@google/genai";
 import { PRICING, PROGRAM } from './constants';
@@ -31,7 +32,10 @@ const Navbar = () => {
             <a href="#pricing" className="hover:text-vibrant transition-colors">Тарифы</a>
             <a href="#faq" className="hover:text-vibrant transition-colors">FAQ</a>
           </div>
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center gap-4">
+            <Link to="/login" className="text-xs font-bold uppercase tracking-widest text-midnight/60 hover:text-vibrant transition-colors px-4 py-2">
+              Войти
+            </Link>
             <a href="#pricing" className="bg-vibrant text-white px-8 py-3.5 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-midnight transition-all shadow-xl hover:shadow-vibrant/40">
               Начать рисовать
             </a>
@@ -52,6 +56,7 @@ const Navbar = () => {
           <a href="#program" className="block text-3xl font-serif italic text-midnight" onClick={() => setIsOpen(false)}>Программа</a>
           <a href="#studio" className="block text-3xl font-serif italic text-midnight" onClick={() => setIsOpen(false)}>Студия</a>
           <a href="#pricing" className="block text-3xl font-serif italic text-midnight" onClick={() => setIsOpen(false)}>Тарифы</a>
+          <Link to="/login" className="block text-3xl font-serif italic text-vibrant" onClick={() => setIsOpen(false)}>Войти</Link>
           <div className="pt-10">
             <a href="#pricing" className="block w-full text-center bg-vibrant text-white py-5 rounded-2xl font-bold text-xl shadow-lg" onClick={() => setIsOpen(false)}>Записаться</a>
           </div>
